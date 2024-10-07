@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPlatosMAUI.Pages.ActualizarPlatoPage"
+             Title="Actualizar Plato">
+    <StackLayout Padding="10">
+        <Label Text="Nombre:" FontSize="Medium" />
+        <Entry x:Name="NombreEntry" />
+
+        <Label Text="Costo:" FontSize="Medium" />
+        <Entry x:Name="CostoEntry" Keyboard="Numeric" />
+
+        <Label Text="Ingredientes:" FontSize="Medium" />
+        <Editor x:Name="IngredientesEntry" HeightRequest="100" />
+
+        <Button Margin="5" Text="Guardar" Clicked="OnGuardarClicked" Background="Green" />
+        <Button Margin="5" Text="Cancelar" Clicked="OnCancelarClicked" Background="BlueViolet" />
+    </StackLayout>
+</ContentPage>

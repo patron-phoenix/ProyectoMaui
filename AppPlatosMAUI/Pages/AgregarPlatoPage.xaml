@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPlatosMAUI.Pages.AgregarPlatoPage"
+             Title="Agregar Plato">
+    
+    <StackLayout Padding="30">
+        <Label Text="Agregar Plato" FontSize="24" HorizontalOptions="Center" />
+
+        <Label Text="Nombre:" />
+        <Entry x:Name="NombreEntry" />
+
+        <Label Text="Costo:" />
+        <Entry x:Name="CostoEntry" Keyboard="Numeric" />
+
+        <Label Text="Ingredientes:" />
+        <Entry x:Name="IngredientesEntry" />
+
+        <Button Margin="5" Text="Agregar" Clicked="OnGuardarClicked" Background="Green"/>
+        <Button Margin="5" Text="Cancelar" Clicked="OnCancelarClicked" Background="BlueViolet" />
+    </StackLayout>
+</ContentPage>

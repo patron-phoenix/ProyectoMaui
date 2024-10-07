@@ -1,0 +1,6 @@
+@ServidorPlatosMauiAPI_HostAddress = http://localhost:5056
+
+GET {{ServidorPlatosMauiAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
